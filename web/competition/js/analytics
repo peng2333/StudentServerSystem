@@ -1,0 +1,27 @@
+function piResponse() {
+piSetCookie('visitor_id471281', '36839331', 3650);
+piSetCookie('visitor_id471281-hash', '92f325bec2b81d8d611f9e71cadd33521b9bd9fe6b0238459ce607323490bb15585fc690f0cc7728495ae96be1992cb6d66790b7', 3650);
+
+if (document.location.protocol != "https:" || (document.location.protocol == "https:" && false)) {
+var analytics_link = document.location.protocol + "//" + "go.vi.ai/analytics?";
+pi.tracker.visitor_id='36839331';
+
+pi.tracker.visitor_id_sign='92f325bec2b81d8d611f9e71cadd33521b9bd9fe6b0238459ce607323490bb15585fc690f0cc7728495ae96be1992cb6d66790b7';
+
+var variables = 'conly=true';
+for (property in pi.tracker) {
+	variables += "&"+property+"="+pi.tracker[property];
+}
+var headID = document.getElementsByTagName("head")[0];
+piScriptObj[piScriptNum] = document.createElement('script');
+piScriptObj[piScriptNum].type = 'text/javascript';
+piScriptObj[piScriptNum].src = analytics_link + variables;
+headID.appendChild(piScriptObj[piScriptNum]);
+piScriptObj[piScriptNum].onload = function() { return; }
+}
+}
+piResponse();
+
+
+
+

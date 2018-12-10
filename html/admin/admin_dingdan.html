@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>layout 后台大布局 - Layui</title>
+<link rel="stylesheet" href="../css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">layui 后台布局</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="../admin/admin_student.html">学生管理</a></li>
+      <li class="layui-nav-item"><a href="../admin/admin_tiezi.html">帖子管理</a></li>
+      <li class="layui-nav-item"><a href="../admin/admin_dingdan.html">订单管理</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          	雪地二货
+        </a>
+      </li>
+      <li class="layui-nav-item"><a href="../index.html">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">订单生成</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body" style="background-color: #E8E8E8">
+    <!-- 内容主体区域 -->
+    <div class="layui-card" style="margin: 10px; margin-right: 50px;">
+		  <div class="layui-card-header"><h1>今日订单</h1></div>
+		  <div class="layui-card-body">
+		  	<table class="layui-table">
+				  <colgroup>
+				    <col width="150">
+				    <col width="200">
+				    <col>
+				  </colgroup>
+				  <thead>
+				    <tr>
+				      <th>商品名</th>
+				      <th>数量</th>
+				      <th>价格</th>
+				    </tr> 
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>123</td>
+				      <td>12</td>
+				      <td>1.0</td>
+				    </tr>
+				    <tr>
+				      <td>1234</td>
+				      <td>11</td>
+				      <td>2.0</td>
+				    </tr>
+				  </tbody>
+				</table>
+		  </div>
+			<span style="float: right; margin: 20px;"><a href="javascript:;"  class="layui-btn layui-btn-small layui-btn-normal ">提交</a></span>
+		</div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script src="../js/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
+

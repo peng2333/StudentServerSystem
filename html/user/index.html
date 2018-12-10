@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>用户中心</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="fly,layui,前端社区">
+  <meta name="description" content="Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力">
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <script src="../js/layui.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="fly-header layui-bg-black">
+  <div class="layui-container">
+    <a class="fly-logo" href="/">
+      <img src="../../res/images/logo.png" alt="layui">
+    </a>
+    <ul class="layui-nav fly-nav layui-hide-xs">
+      <li class="layui-nav-item layui-this">
+        <a href="/"><i class="iconfont icon-jiaoliu"></i>交流</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="../case/case.html"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+      </li>
+    </ul>
+    
+    <ul class="layui-nav fly-nav-user">
+      <!-- 登入后的状态 -->
+      <li class="layui-nav-item">
+        <a class="fly-nav-avatar" href="javascript:;">
+          <cite class="layui-hide-xs">贤心</cite>
+          <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
+          <i class="layui-badge fly-badge-vip layui-hide-xs">VIP3</i>
+          <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg">
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="../user/set.html"><i class="layui-icon">&#xe620;</i>基本设置</a></dd>
+          <dd><a href="../user/message.html"><i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a></dd>
+          <dd><a href="../user/home.html"><i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a></dd>
+          <hr style="margin: 5px 0;">
+          <dd><a href="" style="text-align: center;">退出</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="layui-container fly-marginTop fly-user-main">
+  <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="user">
+    <li class="layui-nav-item">
+      <a href="home.html">
+        <i class="layui-icon">&#xe609;</i>
+        我的主页
+      </a>
+    </li>
+    <li class="layui-nav-item layui-this">
+      <a href="index.html">
+        <i class="layui-icon">&#xe612;</i>
+        用户中心
+      </a>
+    </li>
+    <li class="layui-nav-item">
+      <a href="set.html">
+        <i class="layui-icon">&#xe620;</i>
+        基本设置
+      </a>
+    </li>
+    <li class="layui-nav-item">
+      <a href="message.html">
+        <i class="layui-icon">&#xe611;</i>
+        我的消息
+      </a>
+    </li>
+    
+    <li class="layui-nav-item">
+      <a href="message_3.html">
+        <i class="layui-icon">&#xe612;</i>
+        	早点订单
+      </a>
+    </li>
+  </ul>
+
+  <div class="site-tree-mobile layui-hide">
+    <i class="layui-icon">&#xe602;</i>
+  </div>
+  <div class="site-mobile-shade"></div>
+  
+  <div class="site-tree-mobile layui-hide">
+    <i class="layui-icon">&#xe602;</i>
+  </div>
+  <div class="site-mobile-shade"></div>
+  
+  
+  <div class="fly-panel fly-panel-user" pad20>
+    <!--
+    <div class="fly-msg" style="margin-top: 15px;">
+      您的邮箱尚未验证，这比较影响您的帐号安全，<a href="activate.html">立即去激活？</a>
+    </div>
+    -->
+    <div class="layui-tab layui-tab-brief" lay-filter="user">
+      <ul class="layui-tab-title" id="LAY_mine">
+        <li data-type="mine-jie" lay-id="index" class="layui-this">我发的帖（<span>89</span>）</li>
+<!--        <li data-type="collection" data-url="/collection/find/" lay-id="collection">我收藏的帖（<span>16</span>）</li>-->
+      </ul>
+      <div class="layui-tab-content" style="padding: 20px 0;">
+        <div class="layui-tab-item layui-show">
+          <ul class="mine-view jie-row">
+            <li>
+              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>
+              <i>2017/3/14 上午8:30:00</i>
+              <a class="mine-edit" href="/jie/edit/8116">编辑</a>
+              <em>661阅/10答</em>
+            </li>
+            <li>
+              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>
+              <i>2017/3/14 上午8:30:00</i>
+              <a class="mine-edit" href="/jie/edit/8116">编辑</a>
+              <em>661阅/10答</em>
+            </li>
+            <li>
+              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>
+              <i>2017/3/14 上午8:30:00</i>
+              <a class="mine-edit" href="/jie/edit/8116">编辑</a>
+              <em>661阅/10答</em>
+            </li>
+          </ul>
+          <div id="LAY_page"></div>
+        </div>
+        <!--<div class="layui-tab-item">
+          <ul class="mine-view jie-row">
+            <li>
+              <a class="jie-title" href="../jie/detail.html" target="_blank">基于 layui 的极简社区页面模版</a>
+              <i>收藏于23小时前</i>  </li>
+          </ul>
+          <div id="LAY_page1"></div>
+        </div>-->
+      
+      
+				<div id="demo2" align="center"></div>      	
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fly-footer">
+  <p><a href="http://fly.layui.com/" target="_blank">Fly社区</a> 2017 &copy; <a href="http://www.layui.com/" target="_blank">layui.com 出品</a></p>
+  <p>
+    <a href="http://fly.layui.com/jie/3147/" target="_blank">付费计划</a>
+    <a href="http://www.layui.com/template/fly/" target="_blank">获取Fly社区模版</a>
+    <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+  </p>
+</div>
+
+<script src="../../res/layui/layui.js"></script>
+<script>
+layui.cache.page = 'user';
+layui.cache.user = {
+  username: '游客'
+  ,uid: -1
+  ,avatar: '../../res/images/avatar/00.jpg'
+  ,experience: 83
+  ,sex: '男'
+};
+layui.config({
+  version: "3.0.0"
+  ,base: '../mods/'
+}).extend({
+  fly: 'index'
+}).use('fly');
+</script>
+
+
+<script>
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+  
+ /* //总页数低于页码总数
+  laypage.render({
+    elem: 'demo0'
+    ,count: 50 //数据总数
+  });
+  
+  //总页数大于页码总数
+  laypage.render({
+    elem: 'demo1'
+    ,count: 70 //数据总数
+    ,jump: function(obj){
+      console.log(obj)
+    }
+  });*/
+  
+  //自定义样式
+  laypage.render({
+    elem: 'demo2'
+    ,count: 100
+    ,theme: '#1E9FFF'
+  });
+ /* laypage.render({
+    elem: 'demo2-1'
+    ,count: 100
+    ,theme: '#FF5722'
+  });
+  laypage.render({
+    elem: 'demo2-2'
+    ,count: 100
+    ,theme: '#FFB800'
+  });
+  
+  //自定义首页、尾页、上一页、下一页文本
+  laypage.render({
+    elem: 'demo3'
+    ,count: 100
+    ,first: '首页'
+    ,last: '尾页'
+    ,prev: '<em>←</em>'
+    ,next: '<em>→</em>'
+  });
+  
+  //不显示首页尾页
+  laypage.render({
+    elem: 'demo4'
+    ,count: 100
+    ,first: false
+    ,last: false
+  });
+  
+  //开启HASH
+  laypage.render({
+    elem: 'demo5'
+    ,count: 500
+    ,curr: location.hash.replace('#!fenye=', '') //获取hash值为fenye的当前页
+    ,hash: 'fenye' //自定义hash值
+  });
+  
+  //只显示上一页、下一页
+  laypage.render({
+    elem: 'demo6'
+    ,count: 50
+    ,layout: ['prev', 'next']
+    ,jump: function(obj, first){
+      if(!first){
+        layer.msg('第 '+ obj.curr +' 页');
+      }
+    }
+  });
+  
+  //完整功能
+  laypage.render({
+    elem: 'demo7'
+    ,count: 100
+    ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+    ,jump: function(obj){
+      console.log(obj)
+    }
+  });
+  
+  //自定义排版
+  laypage.render({
+    elem: 'demo8'
+    ,count: 1000
+    ,layout: ['limit', 'prev', 'page', 'next']
+  });
+  laypage.render({
+    elem: 'demo9'
+    ,count: 1000
+    ,layout: ['prev', 'next', 'page']
+  });
+  laypage.render({
+    elem: 'demo10'
+    ,count: 1000
+    ,layout: ['page', 'count']
+  });
+  
+  //自定义每页条数的选择项
+  laypage.render({
+    elem: 'demo11'
+    ,count: 1000
+    ,limit: 100
+    ,limits: [100, 300, 500]
+  });
+  */
+  
+  //将一段数组分页展示
+  
+  
+  //调用分页
+  laypage.render({
+    elem: 'demo2'
+    ,count: data.length
+    ,jump: function(obj){
+      //模拟渲染
+      document.getElementById('biuuu_city_list').innerHTML = function(){
+        var arr = []
+        ,thisData = data.concat().splice(obj.curr*obj.limit - obj.limit, obj.limit);
+        layui.each(thisData, function(index, item){
+          arr.push('<li>'+ item +'</li>');
+        });
+        return arr.join('');
+      }();
+    }
+  });
+  
+});
+</script>
+</body>
+</html>
